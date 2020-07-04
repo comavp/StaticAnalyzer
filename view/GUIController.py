@@ -34,8 +34,7 @@ class GUIController(ApplicationWindow):
             for i in range(len(source)):
                 format_source.append("%2d.   %s" % (i, source[i]))
             self.target_files.append([file_path, source, format_source])
-        self.showFileContent()
-        pass
+            self.showFileContent()
 
     def deleteFile(self):  # ф-я, которая отвечает за удаление файла (из программы)
         if self.file_list.currentRow() != -1:
